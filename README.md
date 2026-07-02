@@ -1,18 +1,20 @@
 #  Flood Prediction System using Machine Learning
 
 ##  Project Overview
-The Flood Prediction System is a Machine Learning-based web application that predicts the likelihood of floods using historical weather data. The system leverages the XGBoost algorithm to provide accurate flood predictions through a user-friendly Flask web interface.
+
+The **Flood Prediction System** is a Machine Learning-based web application that predicts the likelihood of floods using historical weather data. The system applies the **XGBoost** algorithm to analyze weather parameters and generate accurate flood predictions through a simple and interactive Flask web interface.
 
 ---
 
-## Features
+##  Features
+
 - Historical weather data analysis
 - Data preprocessing and feature scaling
-- Machine Learning model training (Decision Tree, Random Forest, KNN, XGBoost)
-- Flood prediction using XGBoost
+- Machine Learning model training
+- Flood prediction using the trained XGBoost model
 - Flask-based web application
-- Real-time prediction results
-- Simple and interactive user interface
+- User-friendly prediction interface
+- Performance testing using Apache JMeter
 
 ---
 
@@ -25,123 +27,198 @@ The Flood Prediction System is a Machine Learning-based web application that pre
 - Pandas
 - NumPy
 - Matplotlib
-- HTML, CSS
+- HTML
+- CSS
+- Apache JMeter
 - Jupyter Notebook
 
 ---
 
-##  Repository Structure
+# Repository Structure
 
-```
-AI-ML-and-GEN-AI-Track-Project-Template/
+```text
+Rising-Waters/
 │
 ├── 1.Brainstorming & Ideation/
+│   ├── Brainstorming & Idea Prioritization.pdf
+│   ├── Define Problem Statements.pdf
+│   └── Empathy Map.pdf
+│
 ├── 2.Requirement Analysis/
+│   ├── Customer Journey Map.pdf
+│   ├── Data Flow Diagram.pdf
+│   ├── Solution Requirements.pdf
+│   └── Technology Stack.pdf
+│
 ├── 3.Project Design Phase/
+│   ├── Problem-Solution Fit.pdf
+│   ├── Proposed Solution.pdf
+│   └── Solution Architecture.pdf
+│
 ├── 4.Project Planning Phase/
+│   └── Project Planning.pdf
+│
 ├── 5.Project Development Phase/
+│   ├── Code Layout, Readability and Reusability.pdf
+│   ├── Coding & Solution.pdf
+│   └── No. of Functional Features Included.pdf
+│
 ├── 6.Project Testing/
+│   └── Performance Testing.pdf
+│
 ├── 7.Project Documentation/
+│   ├── Project Executable Files.pdf
+│   └── Sample Project Documentation.pdf
+│
 ├── 8.Project Demonstration/
-└── README.md
+│   ├── Communication.pdf
+│   ├── Demonstration of Proposed Features.pdf
+│   ├── Project Demo Planning.pdf
+│   ├── Scalability & Future Plan.pdf
+│   └── Team Involvement in Demonstration.pdf
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── dataset/
+├── documentation/
+├── models/
+├── notebooks/
+├── static/
+└── templates/
 ```
 
 ---
 
-##  Folder Description
+# Folder Description
 
 ### 1. Brainstorming & Ideation
-- Problem Statement
-- Proposed Solution
-- Brainstorming Documents
+- Brainstorming & Idea Prioritization
+- Problem Definition
+- Empathy Map
 
 ### 2. Requirement Analysis
-- Functional Requirements
-- Non-Functional Requirements
 - Customer Journey Map
-- Requirement Specification
+- Data Flow Diagram (DFD)
+- Functional & Non-Functional Requirements
+- Technology Stack
 
 ### 3. Project Design Phase
-- System Architecture
-- Data Flow Diagram (DFD)
-- UML Diagrams
-- Database Design
+- Problem-Solution Fit
+- Proposed Solution
+- Solution Architecture
 
 ### 4. Project Planning Phase
-- Project Plan
-- Sprint Planning
-- Task Allocation
-- Timeline
+- Project Planning and Scheduling
 
 ### 5. Project Development Phase
-- Dataset Collection
-- Data Preprocessing
-- Model Training
-- Model Evaluation
-- Flask Application Development
+- Source Code Implementation
+- Code Quality & Readability
+- Functional Features
+- Machine Learning Model Development
 
 ### 6. Project Testing
-- Unit Testing
-- Functional Testing
-- Performance Testing
-- Test Cases
+- Performance Testing using Apache JMeter
 
 ### 7. Project Documentation
-- Project Report
-- User Manual
-- Installation Guide
+- Project Executable Files
+- Project Documentation
 
 ### 8. Project Demonstration
-- Demo Video
-- Presentation (PPT)
-- Screenshots
+- Communication Strategy
+- Demonstration of Proposed Features
+- Project Demo Planning
+- Scalability & Future Plan
+- Team Involvement
 
 ---
 
-##  How to Run
+#  How to Run
 
-1. Clone the repository
-```
-git clone <repository-url>
+## Prerequisites
+
+- Python 3.10 or above
+- pip
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/KSriMounika/Rising-Waters.git
 ```
 
-2. Navigate to the project folder
-```
-cd Flood-Prediction-System
+---
+
+## Navigate to the Project Folder
+
+```bash
+cd Rising-Waters
 ```
 
-3. Install dependencies
-```
+---
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-4. Run the Flask application
-```
+---
+
+## Run the Application
+
+```bash
 python app.py
 ```
 
-5. Open the application in your browser
+---
+
+## Open in Browser
+
 ```
 http://127.0.0.1:5000
 ```
 
 ---
 
-##  Machine Learning Model
+# Machine Learning Models Used
 
 - Decision Tree
 - Random Forest
 - K-Nearest Neighbors (KNN)
-- **XGBoost (Final Model)**
+- **XGBoost (Final Selected Model)**
 
 ---
 
-##  Future Enhancements
+# Testing
+
+- Functional Testing
+- Performance Testing using Apache JMeter
+- Prediction Validation
+- Flood Risk & No Flood Risk Verification
+
+---
+
+# Performance Testing
+
+The application was tested using **Apache JMeter** to evaluate response time, throughput, and error rate.
+
+### Test Summary
+
+- Testing Tool: Apache JMeter
+- Average Response Time: **17 ms**
+- Maximum Response Time: **59 ms**
+- Throughput: **11.2 Requests/sec**
+- Error Rate: **0.00%**
+
+---
+
+# Future Enhancements
 
 - Cloud Deployment
 - Live Weather API Integration
 - User Authentication
 - Mobile Application
-- Advanced Visualization Dashboard
-
+- Advanced Analytics Dashboard
 
