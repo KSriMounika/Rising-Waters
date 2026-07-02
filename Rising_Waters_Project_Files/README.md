@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <img src="documentation/system_architecture.png" alt="Rising Waters Banner" width="800"/>
 </p>
 
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Scikit--Learn-1.3.0-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
   <img src="https://img.shields.io/badge/XGBoost-1.7.6-006600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost"/>
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"/>
-</p>
+</p> -->
 
 <p align="center">
   <b>An intelligent flood prediction system powered by ensemble machine learning models, delivering real-time risk assessments through an intuitive web interface.</b>
