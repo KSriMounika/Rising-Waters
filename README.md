@@ -220,5 +220,8 @@ The application was tested using **Apache JMeter** to evaluate response time, th
 - Live Weather API Integration
 - User Authentication
 - Mobile Application
+
+---
+
 - Advanced Analytics Dashboard
 
