@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+.venv/
+Rising_Waters_Project_Files/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
