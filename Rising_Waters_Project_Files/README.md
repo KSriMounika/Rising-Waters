@@ -2,7 +2,7 @@
   <img src="documentation/system_architecture.png" alt="Rising Waters Banner" width="800"/>
 </p>
 
-<h1 align="center">🌊 Rising Waters: A Machine Learning Approach to Flood Prediction</h1>
+<h1 align="center">Rising Waters: A Machine Learning Approach to Flood Prediction</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
@@ -18,7 +18,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 **Rising Waters** is a comprehensive machine learning system designed to predict flood occurrences based on meteorological and environmental parameters. The system leverages multiple ML algorithms — including Decision Trees, Random Forests, K-Nearest Neighbors, and XGBoost — to analyze weather data and generate accurate flood risk predictions.
 
@@ -26,21 +26,21 @@ Built with a Flask-powered web interface, the system enables users to input real
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **Multi-Model Prediction** | Employs 4 ML models with automatic best-model selection |
-| 📊 **Data Visualization** | Comprehensive EDA with correlation heatmaps, distribution plots, and feature analysis |
-| 🌐 **Web Interface** | Clean, responsive Flask-based UI for real-time predictions |
-| 📈 **Model Comparison** | Side-by-side accuracy metrics across all trained models |
-| ⚡ **XGBoost Champion** | Best-in-class accuracy of **96.55%** with XGBoost |
-| 🔄 **Preprocessing Pipeline** | Automated feature scaling, encoding, and train-test splitting |
-| 💾 **Model Persistence** | Trained models saved via `joblib` for instant loading |
+|  **Multi-Model Prediction** | Employs 4 ML models with automatic best-model selection |
+|  **Data Visualization** | Comprehensive EDA with correlation heatmaps, distribution plots, and feature analysis |
+|  **Web Interface** | Clean, responsive Flask-based UI for real-time predictions |
+|  **Model Comparison** | Side-by-side accuracy metrics across all trained models |
+|  **XGBoost Champion** | Best-in-class accuracy of **96.55%** with XGBoost |
+|  **Preprocessing Pipeline** | Automated feature scaling, encoding, and train-test splitting |
+|  **Model Persistence** | Trained models saved via `joblib` for instant loading |
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The system follows a layered architecture pattern ensuring clean separation of concerns:
 
@@ -58,7 +58,7 @@ The system follows a layered architecture pattern ensuring clean separation of c
 
 ---
 
-## 🗃️ Entity Relationship Diagram
+##  Entity Relationship Diagram
 
 The ER diagram below illustrates the data model and relationships between system entities:
 
@@ -75,7 +75,7 @@ The ER diagram below illustrates the data model and relationships between system
 
 ---
 
-## 🔄 Project Flow
+##  Project Flow
 
 The ML pipeline follows a structured, end-to-end workflow:
 
@@ -101,7 +101,7 @@ The ML pipeline follows a structured, end-to-end workflow:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -115,7 +115,7 @@ The ML pipeline follows a structured, end-to-end workflow:
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 Flood-Prediction-System/
@@ -153,7 +153,7 @@ Flood-Prediction-System/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -201,7 +201,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🤖 ML Models Used
+##  ML Models Used
 
 | # | Model | Algorithm Type | Description |
 |---|-------|---------------|-------------|
@@ -212,7 +212,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 
 | Model | Accuracy | Precision | Recall | F1-Score | Status |
 |-------|----------|-----------|--------|----------|--------|
@@ -221,11 +221,11 @@ http://127.0.0.1:5000
 | KNN | ~88.00% | ~0.87 | ~0.88 | ~0.87 | ✅ Good |
 | **XGBoost** | **~96.55%** | **~0.96** | **~0.97** | **~0.96** | 🏆 **Best** |
 
-> **🏆 Champion Model:** XGBoost achieves the highest accuracy at **96.55%** and is selected as the default prediction model in the deployed application.
+> ** Champion Model:** XGBoost achieves the highest accuracy at **96.55%** and is selected as the default prediction model in the deployed application.
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Training the Models
 ```bash
@@ -253,32 +253,32 @@ Navigate to `http://127.0.0.1:5000` and enter weather parameters to get predicti
 
 ---
 
-## 🎯 Usage Scenarios
+##  Usage Scenarios
 
-### Scenario 1: 🌧️ Heavy Rainfall Alert
+### Scenario 1: Heavy Rainfall Alert
 > **Input:** High rainfall (200mm), low cloud visibility (2km), high seasonal rainfall (500mm)
 >
-> **Output:** ⚠️ **Flood Predicted** — Probability: 94.7%
+> **Output:**  **Flood Predicted** — Probability: 94.7%
 >
 > **Action:** Issue early warning, activate emergency protocols
 
-### Scenario 2: ☀️ Clear Weather Check
+### Scenario 2:  Clear Weather Check
 > **Input:** Low rainfall (10mm), high cloud visibility (15km), normal seasonal rainfall (100mm)
 >
-> **Output:** ✅ **No Flood** — Probability: 3.2%
+> **Output:**  **No Flood** — Probability: 3.2%
 >
 > **Action:** Normal operations, no intervention needed
 
-### Scenario 3: 🌦️ Moderate Conditions Assessment
+### Scenario 3:  Moderate Conditions Assessment
 > **Input:** Moderate rainfall (80mm), moderate cloud visibility (7km), above-average seasonal rainfall (300mm)
 >
-> **Output:** ⚠️ **Flood Possible** — Probability: 61.3%
+> **Output:** **Flood Possible** — Probability: 61.3%
 >
 > **Action:** Monitor conditions closely, prepare contingency plans
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 ### Hardware Requirements
 | Component | Minimum | Recommended |
