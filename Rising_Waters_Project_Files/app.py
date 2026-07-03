@@ -18,10 +18,14 @@ def load_artifacts():
     try:
         model = joblib.load(MODEL_PATH)
         scaler = joblib.load(SCALER_PATH)
-        print('Model and scaler loaded successfully!')
+        print("Model and scaler loaded successfully!")
     except Exception as e:
-        print(f'Error loading model: {e}')
-        print('Please run the model training script first.')
+        print(f"Error loading model: {e}")
+        print("Please run the model training script first.")
+
+
+# Load the model when the application starts
+load_artifacts()
 
 
 @app.route('/')
@@ -45,9 +49,13 @@ def result():
         oct_dec = float(request.form['oct_dec'])
         jan_feb = float(request.form['jan_feb'])
 
-        # Create feature array matching training features
-        # The model was trained on: ANNUAL_RAINFALL, CLOUD_COVERAGE, JUN-SEP, MAR-MAY, OCT-DEC, JAN-FEB
-        features = np.array([[annual_rainfall, cloud_coverage, jun_sep, mar_may, oct_dec, jan_feb]])
+        # Create feature array
+        features = np.array([[annual_rainfall,
+                              cloud_coverage,
+                              jun_sep,
+                              mar_may,
+                              oct_dec,
+                              jan_feb]])
 
         # Scale features
         features_scaled = scaler.transform(features)
@@ -59,10 +67,11 @@ def result():
             return render_template('result_flood.html')
         else:
             return render_template('result_no_flood.html')
+
     except Exception as e:
-        return f'Error: {str(e)}', 400
+        return f"Error: {str(e)}", 400
 
 
 if __name__ == '__main__':
-    load_artifacts()
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
